@@ -1,0 +1,22 @@
+{
+  "name": "tmc",
+  "version": "1.0.0",
+  "description": "Sass watch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/steveplesha/tmc.git"
+  },
+  "author": "Steve Plesha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/steveplesha/tmc/issues"
+  },
+  "homepage": "https://github.com/steveplesha/tmc",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}

@@ -1,0 +1,70 @@
+@import '_colors';
+@import 'main';
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body { font-family: 'Lato', sans-serif; }
+
+header { 
+    padding-top: 0.3125em;
+    
+    @media only screen and (min-width: 1140px) {
+        padding-top: 2em;
+    }
+}
+
+.photo-bkg {
+    background: url("../../img/traffic2.jpg") no-repeat center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    z-index: -1;
+    width: 100%;
+    /* min-height: 400px; */
+}
+
+.photo-mask { 
+    height: 200px; 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    background: url("../../img/bkg-mask.png") no-repeat center bottom;
+}
+
+.brand { 
+    color: rgba(255, 255, 255, 1); 
+    text-align: center;
+    h1 { 
+        display: block;
+        line-height: 31px;
+    }
+    
+    @media only screen and (min-width: 1140px) {
+        float: left;
+        text-align: initial;
+        width: 55%;
+    }
+}
+
+.logo { 
+    max-height: 6.25em; 
+    
+    @media only screen and (min-width: 1140px) {
+        float: left;
+        margin-right: 0.625em;
+    }
+}
+
+.header-phone {
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    a { color: rgba(234, 184, 119, 1); }
+    
+    @media only screen and (min-width: 1140px) {
+        float: right;
+        text-align: initial;
+    }
+}

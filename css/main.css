@@ -1,5 +1,5 @@
-/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 /*  Color Declarations  */
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 html {
   color: #222;
   font-size: 1em;
@@ -61,16 +61,16 @@ body {
     ALL: Blue Theme
    =================== */
 .header-container {
-  border-bottom: 20px solid #0092B2; }
+  border-bottom: 20px solid #E67E22; }
 
 .footer-container,
 .main aside {
-  border-top: 20px solid #0092B2; }
+  border-top: 20px solid #E67E22; }
 
 .header-container,
 .footer-container,
 .main aside {
-  background: #0092B2; }
+  background: #666666; }
 
 .title {
   color: white; }
@@ -125,69 +125,6 @@ nav a {
    =============== */
 .ie7 .title {
   padding-top: 20px; }
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-body {
-  font-family: 'Lato', sans-serif; }
-
-header {
-  padding-top: 0.3125em; }
-  @media only screen and (min-width: 1140px) {
-    header {
-      padding-top: 2em; } }
-
-.brand {
-  color: white;
-  text-align: center; }
-  .brand h1 {
-    display: block;
-    line-height: 31px; }
-  @media only screen and (min-width: 1140px) {
-    .brand {
-      float: left;
-      text-align: initial;
-      width: 55%; } }
-
-.logo {
-  max-height: 6.25em; }
-  @media only screen and (min-width: 1140px) {
-    .logo {
-      float: left;
-      margin-right: 0.625em; } }
-
-.header-phone {
-  color: white;
-  text-align: center; }
-  .header-phone a {
-    color: #eab877; }
-  @media only screen and (min-width: 1140px) {
-    .header-phone {
-      float: right;
-      text-align: initial; } }
-
-/* Wobble Horizontal */
-@keyframes wobble-horizontal {
-  16.65% {
-    transform: translateX(8px); }
-  33.3% {
-    transform: translateX(-6px); }
-  49.95% {
-    transform: translateX(4px); }
-  66.6% {
-    transform: translateX(-2px); }
-  83.25% {
-    transform: translateX(1px); }
-  100% {
-    transform: translateX(0); } }
-.wobble-horizontal {
-  display: inline-block; }
-  .wobble-horizontal:hover {
-    animation-name: wobble-horizontal;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1; }
 
 /* ==========================================================================
    Media Queries
@@ -344,5 +281,61 @@ header {
   h2,
   h3 {
     page-break-after: avoid; } }
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {
+  font-family: 'Lato', sans-serif; }
+
+header {
+  padding-top: 0.3125em; }
+  @media only screen and (min-width: 1140px) {
+    header {
+      padding-top: 2em; } }
+
+.photo-bkg {
+  background: url("../../img/traffic2.jpg") no-repeat center;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  z-index: -1;
+  width: 100%;
+  /* min-height: 400px; */ }
+
+.photo-mask {
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  background: url("../../img/bkg-mask.png") no-repeat center bottom; }
+
+.brand {
+  color: white;
+  text-align: center; }
+  .brand h1 {
+    display: block;
+    line-height: 31px; }
+  @media only screen and (min-width: 1140px) {
+    .brand {
+      float: left;
+      text-align: initial;
+      width: 55%; } }
+
+.logo {
+  max-height: 6.25em; }
+  @media only screen and (min-width: 1140px) {
+    .logo {
+      float: left;
+      margin-right: 0.625em; } }
+
+.header-phone {
+  color: white;
+  text-align: center; }
+  .header-phone a {
+    color: #eab877; }
+  @media only screen and (min-width: 1140px) {
+    .header-phone {
+      float: right;
+      text-align: initial; } }
 
 /*# sourceMappingURL=main.css.map */
