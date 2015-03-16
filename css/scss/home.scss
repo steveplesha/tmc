@@ -20,7 +20,6 @@ header {
     background: url("../img/traffic2.jpg") no-repeat center;
     background-size: 100% 100%;
     background-attachment: fixed;
-    z-index: -1;
     width: 100%;
     height: 129px;
         
@@ -32,11 +31,10 @@ header {
 .photo-mask { 
     height: 129px; 
     width: 100%;
-    z-index: 2;
     background: url("../img/bkg-mask.png") no-repeat center bottom;
     
     @media only screen and (min-width: 1140px) {
-        height: 282px;
+        height: 254px;
     }
 }
 
