@@ -115,7 +115,7 @@ nav a {
 
 .main aside {
   color: white;
-  padding: 0px 5% 10px; }
+  padding: 0px 5% 16px; }
 
 .footer-container footer {
   color: white;
@@ -294,18 +294,28 @@ header {
     header {
       padding-top: 2em; } }
 
+input[type="text"],
+input[type="email"] {
+  padding: 6px 5px;
+  width: 95%;
+  border: none; }
+
+input[type="radio"] {
+  margin-left: 0.625rem;
+  margin-right: 0.1875rem; }
+
 .photo-bkg {
   background: url("../img/traffic2.jpg") no-repeat center;
   background-size: 100% 100%;
   background-attachment: fixed;
   width: 100%;
-  height: 129px; }
+  height: 75px; }
   @media only screen and (min-width: 1140px) {
     .photo-bkg {
       height: 254px; } }
 
 .photo-mask {
-  height: 129px;
+  height: 75px;
   width: 100%;
   background: url("../img/bkg-mask.png") no-repeat center bottom; }
   @media only screen and (min-width: 1140px) {
@@ -346,6 +356,9 @@ header {
       float: right;
       text-align: initial; } }
 
+.content h1 {
+  line-height: 2rem; }
+
 .service-item img {
   width: 50%;
   display: block;
@@ -362,6 +375,20 @@ header {
 
 .border-top {
   border-top: 1px solid black; }
+
+.input-group {
+  margin-bottom: 0.625rem; }
+
+.submit-btn {
+  padding: 0.3125rem 1rem;
+  background-color: #E67E22;
+  border: none; }
+  .submit-btn:hover {
+    background-color: #cd6d17; }
+
+#map {
+  width: 200px;
+  height: 500px; }
 
 @media only screen and (min-width: 1140px) {
   .content {

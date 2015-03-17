@@ -43,9 +43,10 @@
         <div class="main-container">
             <div class="photo-bkg">
                 <div class="photo-mask"></div>
-            </div>            
-            <div class="main wrapper clearfix">
-
+            </div>        
+            <div class="clearfix">
+            <div class="main">
+                <div id="map"></div>
                 <article>
                     <header>
                         <h1>Contact Us</h1>
@@ -63,9 +64,33 @@
                         </ul>
                     </section>
                 </article>
+                
+                <aside>
+                    <h3>Get a quote</h3>
+                    <form name="quote-form">
+                        <div class="input-group">
+                            <label for="name">Name:</label><br>
+                            <input type="text" name="name" placeholder="Enter name">
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email address:</label><br>
+                            <input type="email" placeholder="Enter email address">
+                        </div>
+                        <div class="input-group">
+                            <label for="phone">Phone number:</label><br>
+                            <input type="text" placeholder="Enter phone number">
+                        </div>
+                        <div class="input-group">
+                            <label for="preferred-contact">Do you prefer a phone call or email?</label><br>
+                            <input type="radio" name="preferred-contact" value="email" >Email
+                            <input type="radio" name="preferred-contact" value="phone">Phone<br>
+                        </div>
+                        <input class="submit-btn" type="submit">
+                    </form>
+                </aside>
 
 
-
+                </div>
             </div> <!-- #main -->
         </div> <!-- #main-container -->
 
@@ -77,8 +102,10 @@
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
+        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <script src="js/gmaps.js"></script>
         <script src="js/main.js"></script>
+        
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
         <script>
