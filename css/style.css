@@ -303,8 +303,12 @@ input[type="email"] {
 .contact-form input[type="text"],
 .contact-form input[type="email"] {
   padding: 6px 5px;
-  width: 50%;
+  width: 95%;
   border: 1px solid black; }
+  @media only screen and (min-width: 1140px) {
+    .contact-form input[type="text"],
+    .contact-form input[type="email"] {
+      width: 65%; } }
 
 input[type="radio"] {
   margin-left: 0.625rem;
@@ -351,6 +355,9 @@ input[type="radio"] {
       float: left;
       margin-right: 0.625em;
       max-height: 6.25em; } }
+
+.rubberBand {
+  -webkit-animation-delay: 10s; }
 
 .header-phone {
   color: white;
@@ -412,15 +419,28 @@ input[type="radio"] {
       width: 50%; } }
 
 #map {
-  width: 40%;
-  height: 600px;
-  float: left;
-  margin-right: 2%; }
+  width: 95%;
+  height: 12rem;
+  margin: 0 auto; }
+  @media only screen and (min-width: 1140px) {
+    #map {
+      width: 47%;
+      height: 600px;
+      float: left;
+      margin-right: 3%; } }
 
 .contact-section {
-  margin-left: 44%;
-  padding-left: 3%;
-  border-left: 1px solid black; }
+  text-align: center;
+  padding: 0.625rem; }
+  .contact-section ul {
+    list-style-type: none;
+    -webkit-padding-start: 0; }
+  @media only screen and (min-width: 1140px) {
+    .contact-section {
+      margin-left: 50%;
+      padding: 0 0 0 11%;
+      border-left: 1px solid black;
+      text-align: initial; } }
 
 @media only screen and (min-width: 1140px) {
   .content {
