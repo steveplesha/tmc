@@ -178,7 +178,6 @@ nav a {
         float: left;
         width: 22%;
         margin: 0 1.7%;
-        margin-bottom: 0;
     }
 
     nav li:first-child a {
@@ -214,6 +213,13 @@ nav a {
            -moz-box-shadow: 0 5px 10px #aaa;
                 box-shadow: 0 5px 10px #aaa;
     }
+    
+    nav a {
+        width: 45%;
+        margin: 0 2% 2% 0;
+        display: inline-block;
+    }
+
 
 /* ============
     WIDE: Menu
@@ -226,6 +232,7 @@ nav a {
     nav {
         float: right;
         width: 45%;
+        margin-top: 2rem;
     }
 
 /* ============
@@ -252,6 +259,15 @@ nav a {
     .wrapper {
         width: 1026px; /* 1140px - 10% for margins */
         margin: 0 auto;
+    }
+    
+    nav {
+        margin-top: 1rem;
+    }
+    
+    nav a { 
+        width: 22%;
+        margin: 0 2% 0 0;
     }
 
 }

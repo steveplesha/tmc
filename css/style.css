@@ -137,8 +137,7 @@ nav a {
   nav a {
     float: left;
     width: 22%;
-    margin: 0 1.7%;
-    margin-bottom: 0; }
+    margin: 0 1.7%; }
 
   nav li:first-child a {
     margin-left: 0; }
@@ -164,6 +163,11 @@ nav a {
     -moz-box-shadow: 0 5px 10px #aaa;
     box-shadow: 0 5px 10px #aaa; }
 
+  nav a {
+    width: 45%;
+    margin: 0 2% 2% 0;
+    display: inline-block; }
+
   /* ============
       WIDE: Menu
      ============ */
@@ -172,7 +176,8 @@ nav a {
 
   nav {
     float: right;
-    width: 45%; }
+    width: 45%;
+    margin-top: 2rem; }
 
   /* ============
       WIDE: Main
@@ -191,7 +196,14 @@ nav a {
   .wrapper {
     width: 1026px;
     /* 1140px - 10% for margins */
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  nav {
+    margin-top: 1rem; }
+
+  nav a {
+    width: 22%;
+    margin: 0 2% 0 0; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -305,6 +317,14 @@ input[type="email"] {
   padding: 6px 5px;
   width: 95%;
   border: 1px solid black; }
+  @media only screen and (min-width: 480px) {
+    .contact-form input[type="text"],
+    .contact-form input[type="email"] {
+      width: 55%; } }
+  @media only screen and (min-width: 750px) {
+    .contact-form input[type="text"],
+    .contact-form input[type="email"] {
+      width: 70%; } }
   @media only screen and (min-width: 1140px) {
     .contact-form input[type="text"],
     .contact-form input[type="email"] {
@@ -340,7 +360,7 @@ input[type="radio"] {
     line-height: 31px; }
   .brand h2 {
     display: none; }
-  @media only screen and (min-width: 1140px) {
+  @media only screen and (min-width: 750px) {
     .brand {
       float: left;
       text-align: initial;
@@ -367,7 +387,8 @@ input[type="radio"] {
   @media only screen and (min-width: 1140px) {
     .header-phone {
       float: right;
-      text-align: initial; } }
+      text-align: initial;
+      margin-right: 2%; } }
 
 .image-wrapper {
   width: 100%; }
@@ -422,7 +443,7 @@ input[type="radio"] {
   width: 95%;
   height: 12rem;
   margin: 0 auto; }
-  @media only screen and (min-width: 1140px) {
+  @media only screen and (min-width: 768px) {
     #map {
       width: 47%;
       height: 600px;
@@ -435,7 +456,7 @@ input[type="radio"] {
   .contact-section ul {
     list-style-type: none;
     -webkit-padding-start: 0; }
-  @media only screen and (min-width: 1140px) {
+  @media only screen and (min-width: 768px) {
     .contact-section {
       margin-left: 50%;
       padding: 0 0 0 11%;
