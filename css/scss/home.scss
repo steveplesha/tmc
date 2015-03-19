@@ -16,7 +16,7 @@ header {
     @media only screen and (min-width: 1140px) {
         padding-top: 2em;
     }
-}
+};
 
 input[type="text"],
 input[type="email"] { 
@@ -72,7 +72,7 @@ input[type="radio"] {
 }
 
 .brand { 
-    color: rgba(255, 255, 255, 1); 
+    color: $headerText; 
     text-align: center;
     h1 { 
         display: block;
@@ -94,24 +94,31 @@ input[type="radio"] {
 }
 
 .logo { 
-    max-height: 2.25em; 
+    max-height: 3.3rem; 
+    
+    @media only screen and (min-width: 768px) {
+        float: left;
+        margin-top: 1.625rem; /* 34px / 16px */
+        margin-right: 1rem;
+    }
     
     @media only screen and (min-width: 1140px) {
         float: left;
+        margin-top: initial;
         margin-right: 0.625em;
         max-height: 6.25em;
     }
 }
 
 .rubberBand {
-    -webkit-animation-delay: 10s;
+    -webkit-animation-delay: 5s;
 }
 
 .header-phone {
-    color: rgba(255, 255, 255, 1);
+    color: $headerText;
     text-align: center;
     a { 
-        color: rgba(234, 184, 119, 1); 
+        color: $headerPhoneLink; 
     }
     
     @media only screen and (min-width: 1140px) {
@@ -145,11 +152,20 @@ input[type="radio"] {
     p {
         line-height: 1.375em;
     }
+    
+    @media only screen and (min-width: 750px) {
+        img { 
+            max-width: 200px;
+            float: left;
+            margin-right: 2rem;
+            margin-bottom: 1rem;
+        }
+    }
+    
     @media only screen and (min-width: 1140px) {
         img { 
             width: 30%;
-            float: left;
-            margin-right: 15px;
+            margin-right: 1rem;
         }
         ul {
             list-style-type: none;
@@ -167,7 +183,7 @@ input[type="radio"] {
     padding: 0.3125rem 1rem;
     background-color: $accentColor;
     border: none;
-    color: rgb(255, 255, 255);
+    color: $headerText;
     &:hover {
         background-color: darken($accentColor, 7%);
     }
@@ -176,6 +192,7 @@ input[type="radio"] {
 .lights-img { 
     display: block;
     width: 80%;
+    max-width: 25rem; /* 400px / 16 = 25) */
     margin: 0 auto 1rem auto;
     
     @media only screen and (min-width: 1140px) {
@@ -204,10 +221,12 @@ input[type="radio"] {
         list-style-type: none;
         -webkit-padding-start: 0;
     }
+    
+    a { color: $accentColor; }
 
     @media only screen and (min-width: 768px) {
         margin-left: 50%;
-        padding: 0 0 0 11%;
+        padding: 0 0 0 9%;
         border-left: 1px solid rgb(0, 0, 0);
         text-align: initial;
     }

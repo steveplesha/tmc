@@ -245,8 +245,8 @@ nav a {
     }
 
     .main aside {
-        float: right;
-        width: 28%;
+        width: 50%;
+        margin: 0 auto;
     }
 }
 
@@ -269,7 +269,11 @@ nav a {
         width: 22%;
         margin: 0 2% 0 0;
     }
-
+    
+    .main aside {
+        float: right;
+        width: 28%;
+    }
 }
 
 /* ==========================================================================

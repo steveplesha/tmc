@@ -61,11 +61,11 @@ body {
     ALL: Blue Theme
    =================== */
 .header-container {
-  border-bottom: 20px solid #E67E22; }
+  border-bottom: 20px solid #e67e22; }
 
 .footer-container,
 .main aside {
-  border-top: 20px solid #E67E22; }
+  border-top: 20px solid #e67e22; }
 
 .header-container,
 .footer-container,
@@ -92,7 +92,7 @@ nav a {
   text-decoration: none;
   font-weight: bold;
   color: white;
-  background: #E67E22;
+  background: #e67e22;
   border: 1px solid white;
   transition: background 0.2s; }
   @media only screen and (min-width: 1140px) {
@@ -101,7 +101,7 @@ nav a {
       padding: 10px 0; } }
   nav a:hover {
     text-decoration: underline;
-    background: #E67E22;
+    background: #e67e22;
     transition: background 0.2s; }
 
 /* ==============
@@ -187,8 +187,8 @@ nav a {
     width: 57%; }
 
   .main aside {
-    float: right;
-    width: 28%; } }
+    width: 50%;
+    margin: 0 auto; } }
 @media only screen and (min-width: 1140px) {
   /* ===============
       Maximal Width
@@ -203,7 +203,11 @@ nav a {
 
   nav a {
     width: 22%;
-    margin: 0 2% 0 0; } }
+    margin: 0 2% 0 0; }
+
+  .main aside {
+    float: right;
+    width: 28%; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -369,15 +373,22 @@ input[type="radio"] {
         display: block; } }
 
 .logo {
-  max-height: 2.25em; }
+  max-height: 3.3rem; }
+  @media only screen and (min-width: 768px) {
+    .logo {
+      float: left;
+      margin-top: 1.625rem;
+      /* 34px / 16px */
+      margin-right: 1rem; } }
   @media only screen and (min-width: 1140px) {
     .logo {
       float: left;
+      margin-top: initial;
       margin-right: 0.625em;
       max-height: 6.25em; } }
 
 .rubberBand {
-  -webkit-animation-delay: 10s; }
+  -webkit-animation-delay: 5s; }
 
 .header-phone {
   color: white;
@@ -409,11 +420,16 @@ input[type="radio"] {
   margin: 0 auto; }
 .service-item p {
   line-height: 1.375em; }
+@media only screen and (min-width: 750px) {
+  .service-item img {
+    max-width: 200px;
+    float: left;
+    margin-right: 2rem;
+    margin-bottom: 1rem; } }
 @media only screen and (min-width: 1140px) {
   .service-item img {
     width: 30%;
-    float: left;
-    margin-right: 15px; }
+    margin-right: 1rem; }
   .service-item ul {
     list-style-type: none; } }
 
@@ -425,7 +441,7 @@ input[type="radio"] {
 
 .submit-btn {
   padding: 0.3125rem 1rem;
-  background-color: #E67E22;
+  background-color: #e67e22;
   border: none;
   color: white; }
   .submit-btn:hover {
@@ -434,6 +450,8 @@ input[type="radio"] {
 .lights-img {
   display: block;
   width: 80%;
+  max-width: 25rem;
+  /* 400px / 16 = 25) */
   margin: 0 auto 1rem auto; }
   @media only screen and (min-width: 1140px) {
     .lights-img {
@@ -456,10 +474,12 @@ input[type="radio"] {
   .contact-section ul {
     list-style-type: none;
     -webkit-padding-start: 0; }
+  .contact-section a {
+    color: #e67e22; }
   @media only screen and (min-width: 768px) {
     .contact-section {
       margin-left: 50%;
-      padding: 0 0 0 11%;
+      padding: 0 0 0 9%;
       border-left: 1px solid black;
       text-align: initial; } }
 
