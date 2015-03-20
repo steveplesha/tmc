@@ -19,14 +19,17 @@ header {
 };
 
 input[type="text"],
-input[type="email"] { 
+input[type="email"],
+textarea { 
     padding: 6px 5px;
     width: 95%;
     border: none;
+    color: rgb(0, 0, 0);
 }
 
 .contact-form input[type="text"],
-.contact-form input[type="email"] { 
+.contact-form input[type="email"],
+.contact-form textarea { 
     padding: 6px 5px;
     width: 95%;
     border: 1px solid rgb(0, 0, 0);
@@ -207,7 +210,7 @@ input[type="radio"] {
     
     @media only screen and (min-width: 768px) {
         width: 47%;
-        height: 600px;
+        height: 715px;
         float: left;
         margin-right: 3%;
     }

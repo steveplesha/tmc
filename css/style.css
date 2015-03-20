@@ -311,27 +311,33 @@ header {
       padding-top: 2em; } }
 
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+textarea {
   padding: 6px 5px;
   width: 95%;
-  border: none; }
+  border: none;
+  color: black; }
 
 .contact-form input[type="text"],
-.contact-form input[type="email"] {
+.contact-form input[type="email"],
+.contact-form textarea {
   padding: 6px 5px;
   width: 95%;
   border: 1px solid black; }
   @media only screen and (min-width: 480px) {
     .contact-form input[type="text"],
-    .contact-form input[type="email"] {
+    .contact-form input[type="email"],
+    .contact-form textarea {
       width: 55%; } }
   @media only screen and (min-width: 750px) {
     .contact-form input[type="text"],
-    .contact-form input[type="email"] {
+    .contact-form input[type="email"],
+    .contact-form textarea {
       width: 70%; } }
   @media only screen and (min-width: 1140px) {
     .contact-form input[type="text"],
-    .contact-form input[type="email"] {
+    .contact-form input[type="email"],
+    .contact-form textarea {
       width: 65%; } }
 
 input[type="radio"] {
@@ -464,7 +470,7 @@ input[type="radio"] {
   @media only screen and (min-width: 768px) {
     #map {
       width: 47%;
-      height: 600px;
+      height: 715px;
       float: left;
       margin-right: 3%; } }
 
