@@ -1,341 +1,69 @@
-/*  Color Declarations  */
-/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4; }
+/*
+Error: Undefined variable: "$accentColor".
+        on line 76 of main.scss
 
-html,
-body {
-  height: 100%; }
+71: /* ===================
+72:     ALL: Blue Theme
+73:    =================== *\/
+74: 
+75: .header-container {
+76:     border-bottom: 20px solid $accentColor;
+77: }
+78: 
+79: .footer-container,
+80: .main aside {
+81:     border-top: 20px solid $accentColor;
 
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none; }
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none; }
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0; }
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle; }
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0; }
-
-textarea {
-  resize: vertical; }
-
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0; }
-
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
-body {
-  font: 16px/26px Helvetica, Helvetica Neue, Arial; }
-
-.wrapper {
-  width: 90%;
-  margin: 0 5%; }
-
-/* ===================
-    ALL: Blue Theme
-   =================== */
-.header-container {
-  border-bottom: 20px solid #E67E22; }
-
-.footer-container,
-.main aside {
-  border-top: 20px solid #E67E22; }
-
-.header-container,
-.footer-container,
-.main aside {
-  background: #666666; }
-
-.title {
-  color: white; }
-
-/* ==============
-    MOBILE: Menu
-   ============== */
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none; }
-
-nav a {
-  display: block;
-  margin-bottom: 10px;
-  padding: 10px 0;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: bold;
-  color: white;
-  background: #E67E22;
-  border: 1px solid white;
-  transition: background 0.2s; }
-  @media only screen and (min-width: 1140px) {
-    nav a {
-      background: transparent; } }
-  nav a:hover {
-    text-decoration: underline;
-    background: #E67E22;
-    transition: background 0.2s; }
-
-/* ==============
-    MOBILE: Main
-   ============== */
-.main {
-  padding: 30px 0; }
-
-.main article h1 {
-  font-size: 2em; }
-
-.main aside {
-  color: white;
-  padding: 0px 5% 10px; }
-
-.footer-container footer {
-  color: white;
-  padding: 20px 0; }
-
-/* ===============
-    ALL: IE Fixes
-   =============== */
-.ie7 .title {
-  padding-top: 20px; }
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-@media only screen and (min-width: 480px) {
-  /* ====================
-      INTERMEDIATE: Menu
-     ==================== */
-  nav a {
-    float: left;
-    width: 22%;
-    margin: 0 1.7%;
-    margin-bottom: 0; }
-
-  nav li:first-child a {
-    margin-left: 0; }
-
-  nav li:last-child a {
-    margin-right: 0; }
-
-  /* ========================
-      INTERMEDIATE: IE Fixes
-     ======================== */
-  nav ul li {
-    display: inline; }
-
-  .oldie nav a {
-    margin: 0 0.7%; } }
-@media only screen and (min-width: 768px) {
-  /* ====================
-      WIDE: CSS3 Effects
-     ==================== */
-  .header-container,
-  .main aside {
-    -webkit-box-shadow: 0 5px 10px #aaa;
-    -moz-box-shadow: 0 5px 10px #aaa;
-    box-shadow: 0 5px 10px #aaa; }
-
-  /* ============
-      WIDE: Menu
-     ============ */
-  .title {
-    float: left; }
-
-  nav {
-    float: right;
-    width: 45%; }
-
-  /* ============
-      WIDE: Main
-     ============ */
-  .main article {
-    float: left;
-    width: 57%; }
-
-  .main aside {
-    float: right;
-    width: 28%; } }
-@media only screen and (min-width: 1140px) {
-  /* ===============
-      Maximal Width
-     =============== */
-  .wrapper {
-    width: 1026px;
-    /* 1140px - 10% for margins */
-    margin: 0 auto; } }
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-.hidden {
-  display: none !important;
-  visibility: hidden; }
-
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px; }
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto; }
-
-.invisible {
-  visibility: hidden; }
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table; }
-
-.clearfix:after {
-  clear: both; }
-
-.clearfix {
-  *zoom: 1; }
-
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
-@media print {
-  *,
-  *:before,
-  *:after {
-    background: transparent !important;
-    color: #000 !important;
-    box-shadow: none !important;
-    text-shadow: none !important; }
-
-  a,
-  a:visited {
-    text-decoration: underline; }
-
-  a[href]:after {
-    content: " (" attr(href) ")"; }
-
-  abbr[title]:after {
-    content: " (" attr(title) ")"; }
-
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: ""; }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid; }
-
-  thead {
-    display: table-header-group; }
-
-  tr,
-  img {
-    page-break-inside: avoid; }
-
-  img {
-    max-width: 100% !important; }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3; }
-
-  h2,
-  h3 {
-    page-break-after: avoid; } }
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-body {
-  font-family: 'Lato', sans-serif; }
-
-header {
-  padding-top: 0.3125em; }
-  @media only screen and (min-width: 1140px) {
-    header {
-      padding-top: 2em; } }
-
-.photo-bkg {
-  background: url("../../img/traffic2.jpg") no-repeat center;
-  background-size: 100% 100%;
-  background-attachment: fixed;
-  z-index: -1;
-  width: 100%;
-  /* min-height: 400px; */ }
-
-.photo-mask {
-  height: 200px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  z-index: 2;
-  background: url("../../img/bkg-mask.png") no-repeat center bottom; }
-
-.brand {
-  color: white;
-  text-align: center; }
-  .brand h1 {
-    display: block;
-    line-height: 31px; }
-  @media only screen and (min-width: 1140px) {
-    .brand {
-      float: left;
-      text-align: initial;
-      width: 55%; } }
-
-.logo {
-  max-height: 6.25em; }
-  @media only screen and (min-width: 1140px) {
-    .logo {
-      float: left;
-      margin-right: 0.625em; } }
-
-.header-phone {
-  color: white;
-  text-align: center; }
-  .header-phone a {
-    color: #eab877; }
-  @media only screen and (min-width: 1140px) {
-    .header-phone {
-      float: right;
-      text-align: initial; } }
-
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+main.scss:76
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/script/tree/variable.rb:49:in `_perform'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/script/tree/node.rb:50:in `perform'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/script/tree/list_literal.rb:62:in `block in _perform'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/script/tree/list_literal.rb:62:in `map'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/script/tree/list_literal.rb:62:in `_perform'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/script/tree/node.rb:50:in `perform'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/stack.rb:79:in `block in with_base'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/stack.rb:115:in `with_frame'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/stack.rb:79:in `with_base'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:158:in `visit'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:420:in `map'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/stack.rb:79:in `block in with_base'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/stack.rb:115:in `with_frame'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/stack.rb:79:in `with_base'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:158:in `visit'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:52:in `map'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:157:in `visit'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:8:in `visit'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/root_node.rb:36:in `css_tree'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/engine.rb:285:in `render_with_sourcemap'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/exec/sass_scss.rb:375:in `run'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/exec/sass_scss.rb:62:in `process_result'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/exec/base.rb:40:in `parse'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/lib/sass/exec/base.rb:19:in `parse!'
+s:/Program Files/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.3/bin/sass:13:in `<top (required)>'
+s:/Program Files/RailsInstaller/Ruby1.9.3/bin/sass:23:in `load'
+s:/Program Files/RailsInstaller/Ruby1.9.3/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$accentColor\".\A         on line 76 of main.scss\A \A 71: /* ===================\A 72:     ALL: Blue Theme\A 73:    =================== */\A 74: \A 75: .header-container {\A 76:     border-bottom: 20px solid $accentColor;\A 77: }\A 78: \A 79: .footer-container,\A 80: .main aside {\A 81:     border-top: 20px solid $accentColor;"; }

@@ -136,6 +136,7 @@ input[type="radio"] {
         
     @media only screen and (min-width: 1140px) {
         width: 57%; 
+        margin: 0 auto;
     }
 }
 
@@ -205,12 +206,12 @@ input[type="radio"] {
     
 #map {
     width: 95%;
-    height: 12rem;
+    height: 5rem;
     margin: 0 auto;
     
     @media only screen and (min-width: 768px) {
         width: 47%;
-        height: 715px;
+        height: 300px;
         float: left;
         margin-right: 3%;
     }
@@ -238,7 +239,7 @@ input[type="radio"] {
 
 @media only screen and (min-width: 1140px) {
     .content {
-        width: 57%;
+        width: 97%;
         float: left;
     }
 }

@@ -99,6 +99,11 @@ nav ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    
+    @media only screen and (min-width: 1140px) {
+        float: right;
+        width: 100%;
+    }
 }
 
 nav a {
@@ -119,7 +124,7 @@ nav a {
     
     @media only screen and (min-width: 1140px) {
         background: transparent; 
-        padding: 10px 0;
+        padding: 5px 0;
     }
     
     &:hover {
@@ -266,7 +271,7 @@ nav a {
     }
     
     nav a { 
-        width: 22%;
+        width: 28%;
         margin: 0 2% 0 0;
     }
     
