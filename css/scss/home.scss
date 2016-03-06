@@ -53,7 +53,7 @@ input[type="radio"] {
 }
 
 .photo-bkg {
-    background: url("../img/traffic2.jpg") no-repeat center;
+    background: url("../img/traffic.jpg") no-repeat center;
     background-size: 100% 100%;
     background-attachment: fixed;
     width: 100%;
@@ -220,7 +220,6 @@ input[type="radio"] {
 .contact-section {
     text-align: center;
     padding: 0.625rem;
-    
     ul {
         list-style-type: none;
         -webkit-padding-start: 0;
@@ -229,10 +228,15 @@ input[type="radio"] {
     a { color: $accentColor; }
 
     @media only screen and (min-width: 768px) {
+        height: 300px;
         margin-left: 50%;
         padding: 0 0 0 9%;
         border-left: 1px solid rgb(0, 0, 0);
         text-align: initial;
+        h1 { 
+            padding-top: 3rem; 
+            margin-top: 0;
+        }
     }
 }
     

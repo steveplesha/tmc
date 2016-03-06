@@ -82,6 +82,10 @@ nav ul {
   margin: 0;
   padding: 0;
   list-style-type: none; }
+  @media only screen and (min-width: 1140px) {
+    nav ul {
+      float: right;
+      width: 100%; } }
 
 nav a {
   display: block;
@@ -98,7 +102,7 @@ nav a {
   @media only screen and (min-width: 1140px) {
     nav a {
       background: transparent;
-      padding: 10px 0; } }
+      padding: 5px 0; } }
   nav a:hover {
     text-decoration: underline;
     background: #e67e22;
@@ -176,7 +180,7 @@ nav a {
 
   nav {
     float: right;
-    width: 45%;
+    width: 35%;
     margin-top: 2rem; }
 
   /* ============
@@ -202,7 +206,7 @@ nav a {
     margin-top: 1rem; }
 
   nav a {
-    width: 22%;
+    width: 30%;
     margin: 0 2% 0 0; }
 
   .main aside {
@@ -345,7 +349,7 @@ input[type="radio"] {
   margin-right: 0.1875rem; }
 
 .photo-bkg {
-  background: url("../img/traffic2.jpg") no-repeat center;
+  background: url("../img/traffic.jpg") no-repeat center;
   background-size: 100% 100%;
   background-attachment: fixed;
   width: 100%;
@@ -485,10 +489,14 @@ input[type="radio"] {
     color: #e67e22; }
   @media only screen and (min-width: 768px) {
     .contact-section {
+      height: 300px;
       margin-left: 50%;
       padding: 0 0 0 9%;
       border-left: 1px solid black;
-      text-align: initial; } }
+      text-align: initial; }
+      .contact-section h1 {
+        padding-top: 3rem;
+        margin-top: 0; } }
 
 @media only screen and (min-width: 1140px) {
   .content {
